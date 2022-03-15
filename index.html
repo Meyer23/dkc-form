@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>DKC Form</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 id="title" class="text-center">DKC Form for new runners!</h1>
+        </header>
+       
+        <form id="dkc-form">
+            <fieldset>
+                <legend>Register Details</legend>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input class="form-control" type="text" placeholder="name">
+                </div>
+                <div class="form-group">
+                    <label for="nickname">Nickname</label>
+                    <input class="form-control" type="text" placeholder="nickname">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input class="form-control" type="email" placeholder="email">
+                </div>
+                <label for="game">Favorite Game?</label>
+                <br>
+                <input type="radio" value="dkc1">
+                <label for="dkc1">Donkey Kong Country</label> 
+                <br>
+                <input type="radio" value="dkc2">
+                <label for="dkc2">Donkey Kong Country 2: Diddy's Kong Quest</label>
+                <br>
+                <input type="radio" value="dkc3">
+                <label for="dkc3">Donkey Kong Country 3: Diddy's Double Trouble!</label>
+                <br>
+                <input type="radio" value="tropicalfreeze">
+                <label for="dkc3">Donkey Kong Country Tropical Freeze</label>
+                <p>Choose your level</p>
+                <select form="level" required class="form-control">
+                    <option disabled selected value>Select one</option>
+                    <option value="noob">Noob</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="semipro">Semi Pro</option>
+                    <option value="pro">Pro</option>
+                    <option value="hacker">Hacker</option>
+                </select>
+                <br>
+                <input type="submit" value="Submit" class="submit">
+            </fieldset>
+        </form>
+    </div>
+    
+    
+</body>
+<script src="./index.js"></script>
+</html>
